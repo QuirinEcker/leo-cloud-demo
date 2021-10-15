@@ -40,7 +40,7 @@ jobs:
 
     - name: build docker images
       run: |
-        ./build.sh build ${{ env.REGISTRY }}/${{ github.repository }}
+        ./build.sh build ${{ env.REGISTRY }}/quirinecker/leo-cloud-demo
         docker image ls
       working-directory: distribution/${{ env.DISTRIBUTION_FOLDER }}
 
